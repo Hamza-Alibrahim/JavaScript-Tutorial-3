@@ -17,7 +17,7 @@ function getrepos() {
                     mdiv.append(reso[i].name);
                     let url = document.createElement("a");
                     url.append("Visit");
-                    url.href = `https://github.com/${input.value}/${reso.name}`
+                    url.href = `https://github.com/${input.value}/${reso[i].name}`;
                     url.setAttribute("target", "_blank");
                     mdiv.appendChild(url);
                     let stars = document.createElement("span");
